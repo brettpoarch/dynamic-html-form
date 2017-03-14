@@ -6,7 +6,7 @@ html {box-sizing:border-box;}
 #app {
 		width: 540px; 
 		margin-left: 50px;
-		height: 719px;
+		height: 717px;
 		border: 1px solid grey;
 	}
 	
@@ -30,11 +30,19 @@ html {box-sizing:border-box;}
 		border:none;
 		height: 150px;
 		resize: none;
+		position:relative;
 	}
 	
-	select{
-		width: 300px;
+	i fa-comments{
+		position:absolute;
+		top:0px;
+		left:0;
 	}
+
+	select{
+		width: 500px;
+	}
+
 	button{
 		margin-top: 20px;
 		height: 35px;
@@ -60,4 +68,8 @@ html {box-sizing:border-box;}
 	i{
 		padding-left : 10px;
 		color : lightgrey;
+	}
+
+	select{
+		margin-left: 20px;
 	}
