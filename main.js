@@ -11,11 +11,11 @@ $(document).ready(function(){
 			} else if (value.type === "tel"){
 				htmlStr += `<div><i class="fa ${value.icon}"><input type="${value.type}" placeholder="${value.label}" id="${value.id}"/></i></div>`
 			} else if (value.type === "textarea"){
-				htmlStr += `<div><i class="fa ${value.icon}"><textarea type="${value.type}" placeholder="${value.label}" id="${value.id}"></textarea></i></div>`
+				htmlStr += `<div class="textarea"><i class="fa ${value.icon}"><textarea type="${value.type}" placeholder="${value.label}" id="${value.id}"></textarea></i></div>`
 			} else if (value.type === "select"){
-				htmlStr += `<select id="${value.id}"><option>"${value.label}"`
+				htmlStr += `<select id="${value.id}"><option>${value.label}`
 				value.options.forEach(function(value){
-						htmlStr += `<option>"${value.label}"</option>`
+						htmlStr += `<option>${value.label}</option>`
 				})
 				htmlStr += `</option></select>`
 			}
